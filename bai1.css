@@ -1,0 +1,88 @@
+body, html {
+    height: 100%; /* Thiết lập chiều cao của body và html bằng 100% để menu có thể chiếm toàn bộ chiều cao của màn hình */
+    margin: 0; /* Xóa margin mặc định của body và html */
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; /* Chiều cao của menu sẽ bằng với chiều cao của màn hình */
+    padding: 20px;
+    border-right: 2px solid #ccc; /* Đường viền phía bên phải của menu */
+    background-color: #f0f0f0; /* Màu nền của menu */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục menu */
+    border-bottom: 1px solid #ccc; /* Dấu gạch cách các mục menu */
+    padding-bottom: 10px; /* Để tạo khoảng cách giữa dấu gạch và văn bản */
+    cursor: pointer; /* Biến con trỏ thành dấu nhấp */
+}
+
+.menu li:last-child {
+    border-bottom: none; /* Loại bỏ dấu gạch ở mục cuối cùng */
+}
+
+.menu li:hover {
+    background-color: lightblue; /* Đổi màu nền khi di chuột vào */
+}
+
+.menu li.main {
+    font-weight: bold; /* Đặt chữ in đậm cho mục "Trang chủ" */
+}
+.wrapper{
+    margin-left:200px;
+}
+
+.sinhvien {
+    background-color: blue; 
+}
+.lop{
+    background-color: red; 
+}
+.khoa{
+    background-color: green; 
+}
+.chuyennganh{
+    background-color:purple ; 
+}
+.doan{
+    background-color: purple; 
+}
+.dat{
+    background-color: green; 
+}
+.chuadat{
+    background-color: red; 
+}
+.giaovien{
+    background-color: purple; 
+}
+.tong button {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    color:white;
+    display: inline-block; /* Hiển thị button trên cùng một hàng */
+    vertical-align: top; /* Căn nút theo phía trên của dòng */
+}
+.tong button p{
+    border-top: 2px solid;
+}
+.tong button h1{
+    
+}
+.dangnhap {
+    height: 50px;
+    background-color: rgb(219, 210, 210);
+    display: flex; /* Sử dụng flexbox để căn giữa theo chiều dọc */
+    align-items: center; /* Căn các phần tử theo chiều ngang */
+    font-size: 20px;
+}
